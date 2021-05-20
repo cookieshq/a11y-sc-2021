@@ -129,8 +129,10 @@
 		}
 
 		.reveal {
-			/* Allow scrolling when RevealJS did not kick in */
-			overflow: auto;
+			/* overflow: auto;
+			-webkit-overflow-scrolling: touch; */
+			/* To position the controls */
+			position: relative;
 		}
 
 		.slides {
@@ -143,10 +145,12 @@
 			width: 100%;
 			overflow: auto;
 			scroll-snap-type: y mandatory;
+			-webkit-overflow-scrolling: touch;
 		}
 
 		.slides > * {
 			scroll-snap-align: start;
+			overflow: hidden;
 		}
 
 		body:not(.reveal-viewport) .slides > * + * {
@@ -161,7 +165,7 @@
 			grid-template-columns: 100%;
 			place-items: center;
 			width: 100%;
-			height: 100%;
+			min-height: 100%;
 		}
 
 		.reveal-viewport .past,
@@ -182,10 +186,6 @@
 			padding: 1.5%;
 			width: 100%;
 			height: 100%;
-		}
-
-		.reveal .slides section {
-			overflow: auto;
 		}
 
 		@media (min-width: 768px) {
@@ -263,11 +263,6 @@
 			background-image: url(images/fontawesome/chevron-right-solid.svg);
 		}
 
-		.reveal {
-			overflow: hidden;
-			/* To position the controls */
-			position: relative;
-		}
 
 		.reveal .fragment:not(.visible) {
 			visibility: hidden;
@@ -406,6 +401,16 @@
 
 		h1,h2,h3,h4 {
 			font-size: var(--step-5);
+		}
+
+		@media (max-width: 767px) {
+			.slides {
+				font-size: var(--step-1);
+			}
+
+			h1,h2,h3,h4 {
+				font-size: var(--step-3);
+			}
 		}
 
 		blockquote {
