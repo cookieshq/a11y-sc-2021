@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900");
+.ff-poppins-rg {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.ff-poppins-sb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.ff-poppins-bd {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.ff-poppins-xb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal; }
+
+.ff-poppins-bk {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal; }
+
+.slide-background {
+  background: linear-gradient(#F3554A, #F3554A);
+  background-size: 100% 4%;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+  .slide-background::after {
+    content: '';
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: #F3554A;
+    border: solid 5px white;
+    background-image: url("../../images/cookieshq.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    border-radius: 99999px; }
+
+html:not(.presentation) .reveal a {
+  color: #89211a;
+  text-decoration: underline; }
+
+html:not(.presentation) .slide-number a {
+  color: white; }
+
+html.presentation .reveal a {
+  color: inherit; }
+
+.reveal {
+  font-weight: bold; }
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+  .reveal strong {
+    background: linear-gradient(#F3554A, #F3554A);
+    background-size: 0.25em;
+    background-position: top calc(50% + 0.35em) right 0;
+    background-repeat: no-repeat;
+    background-size: 100% 0.25em; }
+  .reveal .progress,
+  .reveal .controls {
+    color: #89211a; }
+  .reveal .fs-small {
+    font-size: 0.8em; }
+  .reveal .mt-1 {
+    margin-top: 0.5rem; }
+  .reveal .rythm-1 > * + * {
+    margin-top: 0.5rem; }
+  .reveal .mt-2 {
+    margin-top: 1rem; }
+  .reveal .rythm-2 > * + * {
+    margin-top: 1rem; }
+  .reveal .mt-3 {
+    margin-top: 1.5rem; }
+  .reveal .rythm-3 > * + * {
+    margin-top: 1.5rem; }
+  .reveal .mt-4 {
+    margin-top: 2rem; }
+  .reveal .rythm-4 > * + * {
+    margin-top: 2rem; }
+  .reveal .mt-5 {
+    margin-top: 2.5rem; }
+  .reveal .rythm-5 > * + * {
+    margin-top: 2.5rem; }
+  .reveal .w-100 {
+    width: 100%; }
+  .reveal .d-inline-block {
+    display: inline-block; }
+  .reveal .ta-left {
+    text-align: left; }
+  .reveal .my-auto {
+    margin-top: auto;
+    margin-bottom: auto; }
+  .reveal .opacity-0 {
+    opacity: 0; }
+  .reveal .opacity-10 {
+    opacity: 0.1; }
+  .reveal .opacity-20 {
+    opacity: 0.2; }
+  .reveal .opacity-30 {
+    opacity: 0.3; }
+  .reveal .opacity-40 {
+    opacity: 0.4; }
+  .reveal .opacity-50 {
+    opacity: 0.5; }
+  .reveal .opacity-60 {
+    opacity: 0.6; }
+  .reveal .opacity-70 {
+    opacity: 0.7; }
+  .reveal .opacity-80 {
+    opacity: 0.8; }
+  .reveal .opacity-90 {
+    opacity: 0.9; }
+  .reveal .opacity-100 {
+    opacity: 1; }
